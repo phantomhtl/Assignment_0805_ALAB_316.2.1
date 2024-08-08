@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="body">
+      <header>
+        <h1>Welcome to Monty Hall Simulation!</h1>
+        <p>
+          Suppose you're on a game show, and you're given the choice of three
+          doors: Behind one door is a car; behind the others, goats. You pick a
+          door, say No. 1, and the host, who knows what's behind the doors,
+          opens another door, say No. 3, which has a goat. He then says to you,
+          "Do you want to pick door No. 2?" Is it to your advantage to switch
+          your choice?
+        </p>
+      </header>
+
+      <div id="instructions" class="instructions">
+        <div id="row1" class="row1">Please Select A Door</div>
+        <div id="d1">You selected Door 1</div>
+        <div id="d2">You selected Door 2</div>
+        <div id="d3">You selected Door 3</div>
+        <div id="row2" class="row2">
+          <p>A door other than your choice has been opened.</p>
+          <p>Do you want to make a switch?</p>
+          <div class="buttons">
+            <button id="btn-1">Yes</button>
+            <button id="btn-2">No</button>
+          </div>
+        </div>
+      </div>
+
+      <main class="door-row">
+        <img id="door1" class="door" src="img/door.png" alt="door" />
+        <img id="door2" class="door" src="img/door.png" alt="door" />
+        <img id="door3" class="door" src="img/door.png" alt="door" />
+      </main>
+    </div>
+
+    <div id="switchAndWin" class="result">
+      <p>You WIN!</p>
+      <div class="links">
+        <button><a href="index.html">Play again</a></button>
+      </div>
+    </div>
+
+    <div id="switchAndLose" class="result">
+      <p>You LOST!</p>
+      <div class="links">
+        <button><a href="index.html">Play again</a></button>
+      </div>
+    </div>
+
+    <div id="NoSwitchAndWin" class="result">
+      <p>You WIN!</p>
+      <div class="links">
+        <button><a href="index.html">Play again</a></button>
+      </div>
+    </div>
+
+    <div id="NoSwitchAndLose" class="result">
+      <p>You LOST!</p>
+      <div class="links">
+        <button><a href="index.html">Play again</a></button>
+      </div>
+    </div>
+    <script src="app.js" async defer></script>
+  </body>
+</html>
